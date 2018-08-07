@@ -1,7 +1,7 @@
-package com.drou.ocp;
+package com.drou.solid.ocp;
 
-import com.drou.ocp.Book;
-import com.drou.ocp.Cart;
+import com.drou.solid.ocp.Book;
+import com.drou.solid.ocp.Cart;
 
 public class CartManager {
 

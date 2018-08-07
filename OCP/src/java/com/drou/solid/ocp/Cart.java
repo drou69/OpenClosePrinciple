@@ -1,9 +1,9 @@
-package com.drou.ocp;
+package com.drou.solid.ocp;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.drou.ocp.Book;
+import com.drou.solid.ocp.Book;
 
 public class Cart {
 
@@ -24,7 +24,7 @@ public class Cart {
 	}
 	
 	public double calculateBooksWeight() {
-		int totalWeight = 0;
+		double totalWeight = 0;
 		
 		for (Book book : books) {
 			totalWeight += book.getWeight();
@@ -33,14 +33,7 @@ public class Cart {
 		return totalWeight;
 	}
 	
-	public String listBooks() {
-		StringBuilder builder = new StringBuilder();
-		builder.append("The Cart contains the following books: ").append("\n\n");
-		
-		for (Book book : books) {
-			builder.append(book.getName()).append(", cost: $").append(book.getPrice()).append("\n");
-		}
-		
-		return builder.toString();
+	public int getTotalBooks() {
+		return this.books.size();
 	}
 }

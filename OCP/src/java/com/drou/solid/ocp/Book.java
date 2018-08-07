@@ -1,11 +1,11 @@
-package com.drou.ocp;
+package com.drou.solid.ocp;
 
-public class Movie {
+public class Book {
 	private String name;
 	private double price;
 	private double weight;
 	
-	public Movie(String name, double cost, double weight) {
+	public Book(String name, double cost, double weight) {
 		super();
 		this.name = name;
 		this.price = cost;
